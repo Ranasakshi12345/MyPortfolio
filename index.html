@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sakshi- Portfoilio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(6, 6, 36);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      ul li a:hover {
+        color: rgb(142, 142, 233);
+        font-size: 1.02rem;
+      }
+
+      main hr {
+        border: 0;
+        background: rgb(136, 136, 230);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+        font-size: 35px;
+      }
+
+      .leftSection {
+        font-size: 3rem;
+      }
+
+      .leftSection .buttons {
+        padding: 65px 0;
+      }
+
+      .leftSection .btn {
+        background-color: #1f1f65;
+        color: white;
+        border: 2px solid white;
+        padding: 12px;
+        font-size: 17px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .rightSection img {
+        width: 90%;
+      }
+
+      .purple {
+        color: rgb(126, 60, 187);
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(126, 60, 187);
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 62vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+      }
+
+      .image-top {
+        width: 33px;
+        position: relative;
+        top: -32px;
+        left: -9;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      footer {
+        background-color: rgb(59 73 85 / 64%);
+      }
+      .footer {
+        display: flex;
+        padding: 23px 123px;
+        justify-content: space-evenly;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      .footer-right {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+
+      @media screen and (max-width: 986px) {
+        .box {
+          flex-direction: column;
+        }
+
+        .secondSection .vertical {
+          height: unset;
+        }
+
+        .vertical-title {
+          left: 45px;
+        }
+
+        .vertical-desc {
+          left: 45px;
+        }
+
+        /* .secondSection .box {
+          width: 50vw;
+        } */
+
+        nav {
+          flex-direction: column;
+        }
+
+        
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+
+        .leftSection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .secondSection{
+          height: 141vh;
+        }
+
+        .rightSection{
+          width: 120px !important;
+          display: flex;
+          justify-content: center;
+        }
+
+        .rightSection img{
+          width: 45vw;
+          margin: 73px;
+        }
+
+        .image-top{
+          top: 122px;
+        }
+
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        body{
+          min-width: fit-content;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sakshi 's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Project</a></li>
+            <li><a href="/">Contct Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hii, I am <span class="purple">Sakshi</span></div>
+
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+
+        <div class="rightSection">
+          <img src="developer.png" alt="Developer" />
+        </div>
+      </section>
+
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Exeperince</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="hmtl1.png" alt="" />
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+              labore illo ut omnis nam optio quas maiores illum inventore saepe
+              ipsa, distinctio provident!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="react.png" alt="" />
+            <div class="vertical-title">React Developer (2012-2014)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+              labore illo ut omnis nam optio quas maiores illum inventore saepe
+              ipsa, distinctio provident!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="node.png" alt="" />
+            <div class="vertical-title">node.js Developer (2014-2016)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+              labore illo ut omnis nam optio quas maiores illum inventore saepe
+              ipsa, distinctio provident!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="php.png" alt="" />
+            <div class="vertical-title">PHP Developer (2016-2018)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+              labore illo ut omnis nam optio quas maiores illum inventore saepe
+              ipsa, distinctio provident!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="bg1.jpg" alt="" />
+            <div class="vertical-title">Web Developer (2018-2020)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+              labore illo ut omnis nam optio quas maiores illum inventore saepe
+              ipsa, distinctio provident!
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Sakshi's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Project</li>
+            <li>Contact me</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Project</li>
+            <li>Contact me</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Project</li>
+            <li>Contact me</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        © 2023 Sakshi Rana. All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphics designer",
+          "Video Editor",
+          "Web Designer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
