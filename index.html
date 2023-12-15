@@ -11,237 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background-color: rgb(6, 6, 36);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-
-      nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 80px;
-        background-color: rgb(18, 18, 62);
-      }
-
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-
-      ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-
-      ul li a {
-        text-decoration: none;
-        color: white;
-      }
-
-      ul li a:hover {
-        color: rgb(142, 142, 233);
-        font-size: 1.02rem;
-      }
-
-      main hr {
-        border: 0;
-        background: rgb(136, 136, 230);
-        height: 1.2px;
-        margin: 40px 84px;
-      }
-
-      .left {
-        font-size: 1.5rem;
-      }
-
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 120px 0;
-      }
-
-      .firstSection > div {
-        width: 30%;
-        font-size: 35px;
-      }
-
-      .leftSection {
-        font-size: 3rem;
-      }
-
-      .leftSection .buttons {
-        padding: 65px 0;
-      }
-
-      .leftSection .btn {
-        background-color: #1f1f65;
-        color: white;
-        border: 2px solid white;
-        padding: 12px;
-        font-size: 17px;
-        border-radius: 6px;
-        cursor: pointer;
-      }
-
-      .rightSection img {
-        width: 90%;
-      }
-
-      .purple {
-        color: rgb(126, 60, 187);
-      }
-
-      .text-gray {
-        color: gray;
-      }
-
-      #element {
-        color: rgb(126, 60, 187);
-      }
-
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-        height: 80vh;
-      }
-
-      .secondSection h1 {
-        font-size: 1.9rem;
-      }
-
-      .secondSection .box {
-        background: white;
-        width: 62vw;
-        height: 2px;
-        margin: 56px 0;
-        display: flex;
-      }
-
-      .secondSection .vertical {
-        height: 93px;
-        width: 1px;
-        background-color: white;
-        margin: 0 6vw;
-      }
-
-      .image-top {
-        width: 33px;
-        position: relative;
-        top: -32px;
-        left: -9;
-      }
-
-      .vertical-title {
-        position: relative;
-        top: 75px;
-        width: 150px;
-        font-size: 14px;
-      }
-
-      .vertical-desc {
-        position: relative;
-        top: 86px;
-        color: gray;
-        width: 150px;
-        font-size: 9px;
-      }
-
-      footer {
-        background-color: rgb(59 73 85 / 64%);
-      }
-      .footer {
-        display: flex;
-        padding: 23px 123px;
-        justify-content: space-evenly;
-      }
-
-      .footer > div {
-        width: 223px;
-      }
-
-      .footer-right {
-        text-align: center;
-        color: gray;
-        padding: 12px 0;
-      }
-
-      @media screen and (max-width: 986px) {
-        .box {
-          flex-direction: column;
-        }
-
-        .secondSection .vertical {
-          height: unset;
-        }
-
-        .vertical-title {
-          left: 45px;
-        }
-
-        .vertical-desc {
-          left: 45px;
-        }
-
-        /* .secondSection .box {
-          width: 50vw;
-        } */
-
-        nav {
-          flex-direction: column;
-        }
-
-        
-        .firstSection {
-          flex-direction: column-reverse;
-        }
-
-        .leftSection {
-          width: 100% !important;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .secondSection{
-          height: 141vh;
-        }
-
-        .rightSection{
-          width: 120px !important;
-          display: flex;
-          justify-content: center;
-        }
-
-        .rightSection img{
-          width: 45vw;
-          margin: 73px;
-        }
-
-        .image-top{
-          top: 122px;
-        }
-
-        .secondSection {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-
-        body{
-          min-width: fit-content;
-        }
-      }
-    </style>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS style link  -->
   </head>
   <body>
     <header>
@@ -249,11 +21,10 @@
         <div class="left">Sakshi 's Portfolio</div>
         <div class="right">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Project</a></li>
-            <li><a href="/">Contct Me</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html" >Blog</a></li>
+            <li><a href="conduct me.html">Contct Me</a></li>
           </ul>
         </div>
       </nav>
@@ -268,8 +39,9 @@
           <span id="element"></span>
 
           <div class="buttons">
-            <button class="btn">Download Resume</button>
-            <button class="btn">Visit Github</button>
+            <a href="cv.html" target="_blank">
+            <button class="btn">Download Resume</button></a>
+            <a href="https://github.com/Ranasakshi12345" target="_blank"><button class="btn">Visit Github</button></a>
           </div>
         </div>
 
@@ -279,53 +51,48 @@
       </section>
 
       <hr />
+
       <section class="secondSection">
         <span class="text-gray">What I have done so far</span>
-        <h1>Work Exeperince</h1>
+        <h1>Project</h1>
         <div class="box">
           <div class="vertical">
             <img class="image-top" src="hmtl1.png" alt="" />
-            <div class="vertical-title">HTML Developer (2010-2012)</div>
+            <div class="vertical-title">Image Search App</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              labore illo ut omnis nam optio quas maiores illum inventore saepe
-              ipsa, distinctio provident!
+              In This project i am using HTML CSS and JavaScript for image i am using API From unplush.com
+              which provides random images of different categories like nature, animals etc. User can search any category or just click on the home page to get random images.
             </div>
           </div>
           <div class="vertical">
             <img class="image-top" src="react.png" alt="" />
-            <div class="vertical-title">React Developer (2012-2014)</div>
+            <div class="vertical-title">Weather-App</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              labore illo ut omnis nam optio quas maiores illum inventore saepe
-              ipsa, distinctio provident!
+              The Weather App is a simple web application that allows users to check the current weather conditions for a specific location. It is built using HTML, CSS, and JavaScript and utilizes a weather API to fetch real-time weather data.
+              It is a weather app where you can search any city in the world and get its current weather report.
             </div>
           </div>
           <div class="vertical">
             <img class="image-top" src="node.png" alt="" />
-            <div class="vertical-title">node.js Developer (2014-2016)</div>
+            <div class="vertical-title">Quize-App</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              labore illo ut omnis nam optio quas maiores illum inventore saepe
-              ipsa, distinctio provident!
+              I am making a Quize app in this project i am using HTML CSS and JavaScript. https://animated-kheer-a4e8bf.netlify.app. here is the link you can go and check it out.
             </div>
           </div>
           <div class="vertical">
             <img class="image-top" src="php.png" alt="" />
-            <div class="vertical-title">PHP Developer (2016-2018)</div>
+            <div class="vertical-title">Flipkart clone</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              labore illo ut omnis nam optio quas maiores illum inventore saepe
-              ipsa, distinctio provident!
+              It is an ecommerce website where you can buy products from different categories like mobile,laptop etc.
+              In this clone i am using HTML CSS.
             </div>
           </div>
           <div class="vertical">
             <img class="image-top" src="bg1.jpg" alt="" />
-            <div class="vertical-title">Web Developer (2018-2020)</div>
+            <div class="vertical-title">Netflix Clone</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              labore illo ut omnis nam optio quas maiores illum inventore saepe
-              ipsa, distinctio provident!
+              Netflix is one of the most popular streaming platforms in the world, which provides a wide range of movies, TV shows, and original
+              It is a website where you can search movies,series and show details of that movie or series.
             </div>
           </div>
         </div>

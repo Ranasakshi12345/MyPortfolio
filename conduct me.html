@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn link  -->
+    <style>
+      /* Contact Css */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(6, 6, 36);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      ul li a:hover {
+        color: rgb(142, 142, 233);
+        font-size: 1.02rem;
+      }
+      
+      .ContactForm {
+        font-family: "Poppins", sans-serif;
+        padding: 144px 34px;
+      }
+
+      .ContactForm h1 {
+        font-family: "Poppins", sans-serif;
+        /* text-align: center; */
+        padding: 12px 0;
+      }
+
+      .ContactForm form div {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ContactForm form div input {
+        width: 26vw;
+        border-radius: 5px;
+        margin: 6px 0 0 0;
+        padding: 3px;
+      }
+
+      #emailHelp {
+        font-size: 11px;
+        color: rgb(228, 228, 240);
+        margin: 0 5px;
+        padding: 3px 0 0 0;
+      }
+
+      #form-check {
+        flex-direction: row;
+      }
+
+      #form-check input {
+        width: 24px;
+        margin: 3px 0;
+      }
+
+      .btn-sm {
+        font-size: 14px;
+        padding: 10px 19px;
+        margin: 12px 0;
+        border-radius: 10px;
+        background-color: rgb(64, 132, 163);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+    <!-- CSS style link  -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sakshi 's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="conduct me.html">Contct Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="ContactForm">
+        <h1>Contact me for work or general Enquiries</h1>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="name"
+              class="form-control"
+              id="clientname"
+              aria-describedby="emailHelp"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email & phone with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="phoneNo" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="phoneNo" />
+          </div>
+
+          <div class="mb-3">
+            <label for="enquiry" class="form-label">Enquiry</label>
+            <input
+              type="name"
+              class="form-control"
+              id="clientname"
+              aria-describedby="emailHelp"
+            />
+          </div>
+
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="isclient" />
+            <label class="form-check-label" for="isclient"
+              >Work on a project with me</label
+            >
+          </div>
+          <button type="submit" class="btn-sm">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
